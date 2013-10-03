@@ -4,9 +4,7 @@ build:
     - validate-wercker-step
     - script:
         name: install envdir
-        code: |
-          sudo pip install envdir
-
+        code: sudo pip install envdir
     - script:
         name: scenario 1: service down
         code: |
