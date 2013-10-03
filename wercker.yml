@@ -32,3 +32,8 @@ build:
           cd test
           envdir ../envs/case1 ./case1b.sh
 
+    - script:
+        name: scenario 2. service up. ignore branches
+        code: |
+          cd test
+          envdir ../envs/case2 ./case2.sh
