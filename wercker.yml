@@ -1,14 +1,15 @@
 box: python
 build:
-	steps:
+  steps:
     - validate-wercker-step
     - script:
         name: install envdir
         code: sudo pip install envdir
+
     - script:
-        name: scenario 1: service down
-        code: |
-          envdir envs/case1 test/case1.sh
+        name: scenario 1. service down
+        code: envdir envs/case1 test/case1.sh
+
     - script:
         name: clone and start server.
         code: |
@@ -20,5 +21,3 @@ build:
           cp $WERCKER_SOURCE_DIR/test/fixture.json inital_data.json
           ./manage.py syncdb
           ./manage.py run_gunicorn -D
-
-    - script:
