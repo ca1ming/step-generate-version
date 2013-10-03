@@ -15,6 +15,7 @@ build:
     - script:
         name: clone and start server.
         code: |
+          cd tmp
           git clone https://github.com/flenter/versioning_service.git
           cd versioning_service
           python -m virtualenv --distribute venv
@@ -23,6 +24,7 @@ build:
           cp $WERCKER_SOURCE_DIR/test/test_fixture.json ./inital_data.json
           ./manage.py syncdb --noinput
           ./manage.py run_gunicorn -D
+          cd $WERCKER_SOURCE_DIR
 
     - script:
         name: scenario 1b. service up
