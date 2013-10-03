@@ -17,7 +17,7 @@ build:
         code: |
           git clone https://github.com/flenter/versioning_service.git
           cd versioning_service
-          python -m virtualenv --distirbute venv
+          python -m virtualenv --distribute venv
           source venv/bin/activate
           pip install -r requirements.txt
           cp $WERCKER_SOURCE_DIR/test/fixture.json inital_data.json
