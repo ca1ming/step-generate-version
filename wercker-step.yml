@@ -1,0 +1,21 @@
+name: generate-version
+version: 0.0.1-alpha1
+description: Generate build number
+keywords:
+  - version
+  - build number
+properties:
+  api_key:
+    type: string
+    required: true
+  username:
+    type: string
+    required: true
+  for_app:
+    type: number
+    default: wercker
+  ignore_branches:
+    type: boolean
+  base_url:
+    type: string
+    default: http://buildnr.herokuapp.com
