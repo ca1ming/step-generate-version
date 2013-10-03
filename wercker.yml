@@ -15,7 +15,7 @@ build:
     - script:
         name: clone and start server.
         code: |
-          cd tmp
+          cd /tmp
           git clone https://github.com/flenter/versioning_service.git
           cd versioning_service
           python -m virtualenv --distribute venv
