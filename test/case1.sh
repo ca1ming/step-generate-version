@@ -8,6 +8,8 @@ export
 echo ""
 RESULT=$(source $WERCKER_STEP_ROOT/run.sh)
 
+echo "Results: $RESULT"
+
 if [[ $RESULT = "0" ]]; then
     echo "Test: OK"
 else
