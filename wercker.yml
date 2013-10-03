@@ -20,6 +20,6 @@ build:
           python -m virtualenv --distribute venv
           source venv/bin/activate
           pip install -r requirements.txt
-          cp $WERCKER_SOURCE_DIR/test/test_fixture.json inital_data.json
-          ./manage.py syncdb
+          cp $WERCKER_SOURCE_DIR/test/test_fixture.json ./inital_data.json
+          ./manage.py syncdb --noinput
           ./manage.py run_gunicorn -D
