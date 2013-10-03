@@ -8,7 +8,9 @@ build:
 
     - script:
         name: scenario 1. service down
-        code: envdir envs/case1 test/case1.sh
+        code: |
+          cd test
+          envdir envs/case1 test/case1.sh
 
     - script:
         name: clone and start server.
