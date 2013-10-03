@@ -10,7 +10,7 @@ build:
         name: scenario 1. service down
         code: |
           cd test
-          envdir ../envs/case1 test/case1.sh
+          envdir ../envs/case1 ./case1.sh
 
     - script:
         name: clone and start server.
