@@ -7,10 +7,10 @@ build:
         code: sudo pip install envdir
 
     - script:
-        name: scenario 1. service down
+        name: scenario 1a. service down
         code: |
           cd test
-          envdir ../envs/case1 ./case1.sh
+          envdir ../envs/case1 ./case1a.sh
 
     - script:
         name: clone and start server.
@@ -23,3 +23,10 @@ build:
           cp $WERCKER_SOURCE_DIR/test/test_fixture.json ./inital_data.json
           ./manage.py syncdb --noinput
           ./manage.py run_gunicorn -D
+
+    - script:
+        name: scenario 1b. service up
+        code: |
+          cd test
+          envdir ../envs/case1 ./case1b.sh
+
