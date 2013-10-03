@@ -7,7 +7,8 @@ fi
 
 if [$GENERATED_BUILD_NR = ""]
 then
-	echo "\nFailed to get build number" 1>&2
+	echo ""
+	echo "Failed to get build number" 1>&2
 
 	return 1 2>/dev/null || exit 1
 else

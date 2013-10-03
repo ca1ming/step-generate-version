@@ -6,8 +6,9 @@ echo ""
 echo "Initial environment variables: "
 export
 echo ""
-RESULT=$(source $WERCKER_STEP_ROOT/run.sh)
+source $WERCKER_STEP_ROOT/run.sh
 
+RESULT=$?
 echo "Results: $RESULT"
 
 if [[ $RESULT = "0" ]]; then
