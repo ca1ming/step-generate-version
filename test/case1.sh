@@ -12,8 +12,8 @@ RESULT=$?
 echo "Results: $RESULT"
 
 if [[ $RESULT = "0" ]]; then
-    echo "Test: OK"
-else
     echo "Test: FAIL"
     return 1 2>/dev/null || exit 1
+else
+    echo "Test: OK"
 fi
