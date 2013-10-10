@@ -1,5 +1,5 @@
 name: generate-version
-version: 0.0.1
+version: 0.0.2
 description: Generate build number
 keywords:
   - version
@@ -13,9 +13,10 @@ properties:
     required: true
   for_app:
     type: number
-    default: wercker
+    required: true
   ignore_branches:
     type: boolean
+    default: false
   base_url:
     type: string
     default: http://buildnr.herokuapp.com
