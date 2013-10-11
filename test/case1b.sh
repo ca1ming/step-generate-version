@@ -58,7 +58,9 @@ source $WERCKER_STEP_ROOT/run.sh
 
 RESULT=$?
 
-if [[ $RESULT = "0" ]] || [[ $GENERATED_BUILD_NR = "1" ]]; then
+if [[ $RESULT != "0" ]] || [[ $GENERATED_BUILD_NR != "1" ]]; then
 	echo "Test: FAIL"
 	return 1 2>/dev/null || exit 1
 fi
+
+echo "Tests: complete"
