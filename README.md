@@ -1,6 +1,6 @@
 # step-generate-version
 
-Sets an environment variable to contain a build nr. This step depends on a running instance of (buildnr.herokuapp.com)[http://buildnr.herokuapp.com] or your own instance of the python/django app: (github.com/flenter/versioning_service)[https://github.com/flenter/versioning_service]
+Sets an environment variable to contain a build nr (GENERATED_BUILD_NR). This step depends on a running instance of [buildnr.herokuapp.com](http://buildnr.herokuapp.com) or your own instance of the python/django app: [github.com/flenter/versioning_service](https://github.com/flenter/versioning_service)
 
 For this step you need to:
 
