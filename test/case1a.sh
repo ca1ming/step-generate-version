@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Case 1: server not running. Script should return an error."
+echo "Case 1a: server not running. Script should return an error."
 
 echo ""
 echo "Initial environment variables: "
