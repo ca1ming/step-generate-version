@@ -56,6 +56,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
+## 0.0.3
+- update to README
+
 ## 0.0.2
 
 - fix: for_app no longer has 'wercker' as a default value
