@@ -13,6 +13,8 @@ RESULT=$?
 if [[ $RESULT != "0" ]] || [[ $GENERATED_BUILD_NR != "1" ]]; then
     echo "Test: FAIL"
     return 1 2>/dev/null || exit 1
+else
+	echo "Test: OK"
 fi
 
 echo ""
@@ -30,6 +32,8 @@ RESULT=$?
 if [[ $RESULT != "0" ]] || [[ $GENERATED_BUILD_NR != "2" ]]; then
     echo "Test: FAIL"
     return 1 2>/dev/null || exit 1
+else
+	echo "Test: OK"
 fi
 
 echo ""
@@ -47,6 +51,8 @@ RESULT=$?
 if [[ $RESULT != "0" ]] || [[ $GENERATED_BUILD_NR != "1" ]]; then
     echo "Test: FAIL"
     return 1 2>/dev/null || exit 1
+else
+	echo "Test: OK"
 fi
 
 echo ""
@@ -61,6 +67,8 @@ RESULT=$?
 if [[ $RESULT != "0" ]] || [[ $GENERATED_BUILD_NR != "1" ]]; then
 	echo "Test: FAIL"
 	return 1 2>/dev/null || exit 1
+else
+	echo "Test: OK"
 fi
 
 echo "Tests: complete"
