@@ -2,6 +2,13 @@
 
 Sets an environment variable to contain a build nr (GENERATED_BUILD_NR). This step depends on a running instance of [buildnr.herokuapp.com](http://buildnr.herokuapp.com) or your own instance of the python/django app: [github.com/flenter/versioning_service](https://github.com/flenter/versioning_service)
 
+# Guides
+An example of how to use this step can be found over on the wercker
+blog:
+
+* [Autoincrement versioning for android](http://blog.wercker.com/2013/10/11/auto-increment-versioning-for-android.html)
+
+# Requirements
 For this step you need to:
 
 * login/register on (buildnr.herokuapp.com)[http://buildnr.herokuapp.com]
@@ -9,7 +16,7 @@ For this step you need to:
 * go to the details of the application and you will find the values for the parameters of this step.
 
 # What's new
-
+- link to blog post on how to use this for your android builds.
 - set environment variable GENERATED_BUILD_NR with the value returned from the versioning service
 
 # Options
@@ -55,6 +62,9 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.0.4
+- update to README
 
 ## 0.0.3
 - update to README
