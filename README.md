@@ -11,7 +11,7 @@ blog:
 # Requirements
 For this step you need to:
 
-* login/register on (buildnr.herokuapp.com)[http://buildnr.herokuapp.com]
+* login/register on [buildnr.herokuapp.com](http://buildnr.herokuapp.com)
 * add an application (which is not much more than a name)
 * go to the details of the application and you will find the values for the parameters of this step.
 
@@ -62,6 +62,9 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.0.5
+- fix in markdown syntax for link
 
 ## 0.0.4
 - update to README
